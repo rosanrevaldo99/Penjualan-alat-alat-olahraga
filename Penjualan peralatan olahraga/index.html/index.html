@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arena Sport – Sepatu Futsal, Bola, Jersey & Perlengkapan Olahraga</title>
+<meta name="description" content="Toko perlengkapan olahraga: sepatu futsal, bola kaki, mini soccer, jersey, kaos kaki, dan alat olahraga lainnya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#beranda" class="logo">ARENA<span>SPORT</span></a>
+  <nav id="menu" aria-label="Menu utama">
+    <a href="#produk">Produk</a>
+    <a href="#kategori">Kategori</a>
+    <a href="#kenapa">Kenapa Kami</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+  <button class="cart-btn" id="openCart" aria-label="Buka keranjang">Keranjang <b id="cartCount">0</b></button>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+</header>
+
+<main>
+<section class="hero" id="beranda">
+  <div class="hero-text">
+    <p class="tag">Gratis ongkir untuk belanja di atas Rp500.000</p>
+    <h1>Siap main,<br>dari ujung sepatu sampai peluit akhir.</h1>
+    <p class="lead">Sepatu futsal, bola kaki, mini soccer, jersey, kaos kaki, dan alat olahraga lain. Semua dalam satu toko.</p>
+    <div class="cta">
+      <a href="#produk" class="btn">Belanja sekarang</a>
+      <a href="#kategori" class="btn ghost">Lihat kategori</a>
+    </div>
+    <ul class="stats">
+      <li><b>150+</b> produk</li>
+      <li><b>4.9/5</b> rating pembeli</li>
+      <li><b>2 hari</b> sampai</li>
+    </ul>
+  </div>
+  <figure class="hero-photo">
+    <img src="foto.jpg" alt="Pemilik Arena Sport berdiri di padang rumput dengan latar perbukitan">
+    <figcaption>Pemilik Arena Sport. Kami main, kami paham yang kamu butuhkan.</figcaption>
+  </figure>
+</section>
+
+<div class="ticker" aria-hidden="true"><div><span>SEPATU FUTSAL</span><span>BOLA KAKI</span><span>MINI SOCCER</span><span>JERSEY</span><span>KAOS KAKI</span><span>SARUNG TANGAN</span><span>SEPATU FUTSAL</span><span>BOLA KAKI</span><span>MINI SOCCER</span><span>JERSEY</span><span>KAOS KAKI</span><span>SARUNG TANGAN</span></div></div>
+
+<section class="section" id="kategori">
+  <h2>Belanja per kategori</h2>
+  <div class="cats" id="cats"></div>
+</section>
+
+<section class="section alt" id="produk">
+  <h2>Semua produk</h2>
+  <div class="tools">
+    <input type="search" id="search" placeholder="Cari produk, misal: sepatu futsal" aria-label="Cari produk">
+    <select id="sort" aria-label="Urutkan">
+      <option value="default">Urutkan: Terbaru</option>
+      <option value="low">Harga terendah</option>
+      <option value="high">Harga tertinggi</option>
+      <option value="rating">Rating tertinggi</option>
+    </select>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>Produk tidak ditemukan. Coba kata kunci lain atau pilih kategori Semua.</p>
+</section>
+
+<section class="section" id="kenapa">
+  <h2>Kenapa belanja di Arena Sport</h2>
+  <div class="why">
+    <div><h3>Produk original</h3><p>Setiap barang dicek sebelum dikirim, lengkap dengan garansi toko.</p></div>
+    <div><h3>Pengiriman cepat</h3><p>Pesanan sebelum jam 15.00 dikirim di hari yang sama.</p></div>
+    <div><h3>Tukar ukuran gratis</h3><p>Salah ukuran sepatu atau jersey? Tukar dalam 7 hari.</p></div>
+    <div><h3>Pesan lewat WhatsApp</h3><p>Tanya stok dan ukuran langsung ke admin kami.</p></div>
+  </div>
+</section>
+
+<section class="section alt" id="testi">
+  <h2>Kata pembeli</h2>
+  <div class="why">
+    <blockquote>Sepatu futsalnya nyaman dari pemakaian pertama. Pengiriman juga cepat.<cite>Rizky, Jambi</cite></blockquote>
+    <blockquote>Jersey tim kami dipesan sekaligus 15 pcs, ukuran semua pas.<cite>Dimas, Muaro Bungo</cite></blockquote>
+    <blockquote>Bola mini soccer awet dipakai tiap minggu. Harganya masuk akal.<cite>Andi, Kerinci</cite></blockquote>
+  </div>
+</section>
+
+<section class="section news">
+  <h2>Dapat info diskon lebih dulu</h2>
+  <form id="newsForm" novalidate>
+    <input type="email" id="email" placeholder="Alamat email kamu" aria-label="Email">
+    <button class="btn" type="submit">Berlangganan</button>
+  </form>
+  <p class="msg" id="newsMsg" role="status"></p>
+</section>
+</main>
+
+<footer id="kontak">
+  <div>
+    <div class="logo">ARENA<span>SPORT</span></div>
+    <p>Perlengkapan olahraga lengkap untuk pemain dan tim.</p>
+  </div>
+  <div>
+    <h3>Hubungi kami</h3>
+    <p>WhatsApp: 0812-0000-0000<br>Email: halo@arenasport.id<br>Buka setiap hari, 09.00–21.00</p>
+  </div>
+  <div>
+    <h3>Menu</h3>
+    <p><a href="#produk">Produk</a><br><a href="#kategori">Kategori</a><br><a href="#kenapa">Kenapa Kami</a></p>
+  </div>
+  <small>© 2026 Arena Sport. Semua hak dilindungi.</small>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Keranjang belanja" aria-hidden="true">
+  <div class="drawer-head"><h2>Keranjang</h2><button id="closeCart" aria-label="Tutup keranjang">✕</button></div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot">
+    <div class="total"><span>Total</span><b id="cartTotal">Rp0</b></div>
+    <button class="btn full" id="checkout">Pesan via WhatsApp</button>
+    <button class="link" id="clearCart">Kosongkan keranjang</button>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
